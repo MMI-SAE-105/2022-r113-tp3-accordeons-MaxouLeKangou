@@ -1,9 +1,12 @@
 {
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "parcel": "^2.8.0"
   },
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.5"
   }
 }
