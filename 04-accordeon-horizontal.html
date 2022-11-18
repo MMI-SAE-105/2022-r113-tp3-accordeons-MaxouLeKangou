@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon horizontal</title>
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
+    <ul id="accordeon" x-data="{open:1}">
+      <li :class="{actif:open === 1}">
+        <figure>
+          <img @click="open = 1" src="BLUR.jpg" alt="" width="102">
+          <figcaption>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li :class="{actif:open === 2}">
+        <figure>
+          <img @click="open = 2" src="BLUR.jpg" alt="" width="102">
+          <figcaption>
+            <h3>Dolore, odio eveniet.</h3>
+            <p>Illo delectus quidem inventore nemo dignissimos.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li :class="{actif:open === 3}">
+        <figure>
+          <img @click="open = 3" src="BLUR.jpg" alt="" width="102">
+          <figcaption>
+            <h3>Eaque, at itaque?</h3>
+            <p>Iure dignissimos est vero voluptates officiis.</p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </body>
 </html>
